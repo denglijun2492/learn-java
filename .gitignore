@@ -1,3 +1,7 @@
 */.idea/
 learn-mybatis/target/
+jar-isolation-demo/executor-common/target/
+jar-isolation-demo/executor-proxy/target/
+jar-isolation-demo/executor-v1/target
+jar-isolation-demo/executor-v2/target
 *.iml
