@@ -1,0 +1,8 @@
+
+spring:
+  aop:
+    auto: true
+server:
+  port: 8082
+  servlet:
+    context-path: /learn
