@@ -8,4 +8,5 @@ import java.lang.annotation.*;
 public @interface SystemOperation {
     String code() default "";
     String desc() default "";
+    String template() default "";
 }

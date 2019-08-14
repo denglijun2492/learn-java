@@ -1,8 +1,41 @@
 
 spring:
+  datasource:
+    url: "jdbc:h2:mem:test"
+    username: "admin"
+    password: "123456"
+    driver-class-name: org.h2.Driver
+    schema: classpath:db/schema-h2.sql
+    data: classpath:db/data-h2.sql
+    druid:
+      web-stat-filter:
+        enabled: true
+      stat-view-servlet:
+        enabled: true
+      filter:
+        stat:
+          enabled: true
+          db-type: h2
+          log-slow-sql: true
+          slow-sql-millis: 1
+        slf4j:
+          enabled: true
+          statement-executable-sql-log-enable: true
+          statement-log-enabled: true
+          result-set-log-enabled: true
+#      filters: stat,slf4j
+#      time-between-log-stats-millis: 10000
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true
   aop:
     auto: true
 server:
   port: 8082
   servlet:
     context-path: /learn
+logging:
+  path: d:/my-log
+  config: classpath:logback-spring.xml
