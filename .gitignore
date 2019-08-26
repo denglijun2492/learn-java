@@ -6,4 +6,8 @@ jar-isolation-demo/executor-v1/target
 jar-isolation-demo/executor-v2/target
 learn-spring/target
 *.iml
+learn-spi/store-api/target/
+learn-spi/store-db/target/
+learn-spi/store-fastdfs/target/
+learn-spi/app/target/
 
