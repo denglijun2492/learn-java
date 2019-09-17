@@ -1,5 +1,6 @@
 */.idea/
 learn-mybatis/target/
+learn-elasticsearch/target/
 jar-isolation-demo/executor-common/target/
 jar-isolation-demo/executor-proxy/target/
 jar-isolation-demo/executor-v1/target

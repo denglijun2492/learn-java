@@ -1,0 +1,10 @@
+#主机列表配置
+hosts:
+ - hostname: 10.11.0.128
+   port: 9200
+#安全登录开关
+securityEnabled: 0
+#用户名
+userName: elastic
+#密码
+password: elastic
