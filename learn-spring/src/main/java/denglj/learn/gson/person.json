@@ -1,0 +1,10 @@
+{
+  "name": "张蝶色",
+  "birthday": "20100405",
+  "nation": "CN",
+  "addressList": [
+    {"address":  "厦门莲岳里", "zipcode":  "111111"},
+    {"address":  "厦门松柏湖", "zipcode":  "222222"}
+  ]
+
+}
