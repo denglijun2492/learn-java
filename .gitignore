@@ -14,3 +14,10 @@ learn-spi/app/target/
 mygraphql/target/
 learn-skywalking/~$$learn-skywalking.~vsdx
 learn-elasticsearch/src/main/resources/temp2.json
+learn-agent/learn-agent-hello/target/
+learn-agent/learn-agent-hello/dependency-reduced-pom.xml
+learn-agent/learn-app1/target/
+prometheus/prom-client/target/
+prometheus/prom-agent/target/
+prometheus/hello-world/target/
+prometheus/prom-client/dependency-reduced-pom.xml
