@@ -21,3 +21,4 @@ prometheus/prom-client/target/
 prometheus/prom-agent/target/
 prometheus/hello-world/target/
 prometheus/prom-client/dependency-reduced-pom.xml
+learn-hanlp/target
