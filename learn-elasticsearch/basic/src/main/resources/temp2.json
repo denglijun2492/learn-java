@@ -1,0 +1,87 @@
+{
+  "size": 5000,
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "bool": {
+            "should": [
+              {
+                "bool": {
+                  "must": [
+                    {
+                      "range": {
+                        "heartbeat_time": {
+                          "from": 1568649600000,
+                          "to": null,
+                          "include_lower": true,
+                          "include_upper": true,
+                          "boost": 1.0
+                        }
+                      }
+                    },
+                    {
+                      "range": {
+                        "register_time": {
+                          "from": null,
+                          "to": 1568649600000,
+                          "include_lower": true,
+                          "include_upper": true,
+                          "boost": 1.0
+                        }
+                      }
+                    }
+                  ],
+                  "adjust_pure_negative": true,
+                  "boost": 1.0
+                }
+              },
+              {
+                "bool": {
+                  "must": [
+                    {
+                      "range": {
+                        "register_time": {
+                          "from": null,
+                          "to": 1568649600000,
+                          "include_lower": true,
+                          "include_upper": true,
+                          "boost": 1.0
+                        }
+                      }
+                    },
+                    {
+                      "range": {
+                        "heartbeat_time": {
+                          "from": 1567267200000,
+                          "to": null,
+                          "include_lower": true,
+                          "include_upper": true,
+                          "boost": 1.0
+                        }
+                      }
+                    }
+                  ],
+                  "adjust_pure_negative": true,
+                  "boost": 1.0
+                }
+              }
+            ],
+            "adjust_pure_negative": true,
+            "boost": 1.0
+          }
+        },
+        {
+          "term": {
+            "is_address": {
+              "value": 0,
+              "boost": 1.0
+            }
+          }
+        }
+      ],
+      "adjust_pure_negative": true,
+      "boost": 1.0
+    }
+  }
+}
