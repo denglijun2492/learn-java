@@ -25,3 +25,4 @@ learn-hanlp/target
 learn-elasticsearch/my-analysis/target
 learn-elasticsearch/basis/target
 learn-elasticsearch/elasticsearch-analysis-ik-6.x/target
+learn-jdk8/target
