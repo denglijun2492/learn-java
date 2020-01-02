@@ -1,10 +1,11 @@
 */.idea/
 learn-mybatis/target/
 learn-elasticsearch/target/
-jar-isolation-demo/executor-common/target/
-jar-isolation-demo/executor-proxy/target/
-jar-isolation-demo/executor-v1/target
-jar-isolation-demo/executor-v2/target
+jar-isolation-demo/my-isolation/executor-common/target/
+jar-isolation-demo/my-isolation/executor-proxy/target/
+jar-isolation-demo/my-isolation/executor-v1/target
+jar-isolation-demo/my-isolation/executor-v2/target
+jar-isolation-demo/my-isolation/ext
 learn-spring/target
 *.iml
 learn-spi/store-api/target/
