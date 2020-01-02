@@ -27,3 +27,6 @@ learn-elasticsearch/my-analysis/target
 learn-elasticsearch/basis/target
 learn-elasticsearch/elasticsearch-analysis-ik-6.x/target
 learn-jdk8/target
+learn-redis/demo/.idea
+learn-redis/demo/target
+learn-redis/spring-data-redis-2.0.x
