@@ -1,6 +1,7 @@
 package denglj.learn.mybatis.entity;
 
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.TableName;
 
 /**
  * Created by denglj on 2019/7/2.

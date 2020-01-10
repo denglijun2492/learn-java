@@ -20,7 +20,6 @@ public class PropertyHolderBean {
     private String driverClass;
     private String userName;
     private String password;
-
     public void print(){
         log.info("读取到url：{}", url);
         log.info("读取到driverClass：{}", driverClass);

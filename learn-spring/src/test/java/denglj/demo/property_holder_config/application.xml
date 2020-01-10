@@ -3,7 +3,12 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
-    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+<!--    <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">-->
+<!--        <property name="location">-->
+<!--            <value>denglj/demo/property_holder_config/db.properties</value>-->
+<!--        </property>-->
+<!--    </bean>-->
+    <bean class="org.springframework.context.support.PropertySourcesPlaceholderConfigurer">
         <property name="location">
             <value>denglj/demo/property_holder_config/db.properties</value>
         </property>
@@ -15,5 +20,4 @@ http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
         <property name="userName" value="${jdbc.username}" />
         <property name="password" value="${jdbc.password}" />
     </bean>
-
 </beans>

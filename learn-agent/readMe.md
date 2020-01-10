@@ -1,6 +1,6 @@
 # 参考
 
-[ava字节码1-Agent简单上手](https://www.jianshu.com/p/3bbfa22ec7f5)
+[Java字节码1-Agent简单上手](https://www.jianshu.com/p/3bbfa22ec7f5)
 
 [Java字节码2-instrument初体验](https://www.jianshu.com/p/be092b1c72cb)
 
