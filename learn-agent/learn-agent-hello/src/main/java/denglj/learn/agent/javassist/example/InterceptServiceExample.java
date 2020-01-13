@@ -17,13 +17,9 @@ public class InterceptServiceExample {
     private static ClassPool pool = ClassPool.getDefault();
 
     public static void main(String[] args) throws Exception {
-
         update();
-
         PersonService personService = new PersonService();
         personService.printName();
-
-
     }
 
     public static void update() throws Exception {

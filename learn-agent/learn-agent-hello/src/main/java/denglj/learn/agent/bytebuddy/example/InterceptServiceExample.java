@@ -18,22 +18,18 @@ public class InterceptServiceExample {
 
     public static void main(String[] args) {
 
-//        PersonService service = new PersonService();
-//        service.printName();
-
+        HelloService service = new HelloService();
+        service.hello();
         update();
-
-        HelloService service2 = new HelloService();
-        service2.hello();
+        service.hello();
 
     }
 
     public static void update(){
         ByteBuddyAgent.install();
-        new ByteBuddy().redefine(HelloService.class)
-                .method(ElementMatchers.<MethodDescription>any())
-                .intercept(MethodDelegation.to(HelloService2.class))
+        new ByteBuddy().redefine(HelloService2.class)
+                .name(HelloService.class.getName())
                 .make()
-                .load(Thread.currentThread().getContextClassLoader(), ClassReloadingStrategy.Default.WRAPPER);
+                .load(Thread.currentThread().getContextClassLoader(), ClassReloadingStrategy.fromInstalledAgent());
     }
 }
