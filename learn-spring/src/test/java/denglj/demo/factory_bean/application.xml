@@ -3,6 +3,5 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
-    <bean id="mybean" class="denglj.demo.init.MyBean" init-method="init">
-    </bean>
+    <bean name="myFactoryBean" class="denglj.demo.factory_bean.MyFactoryBean"></bean>
 </beans>

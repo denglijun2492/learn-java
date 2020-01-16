@@ -1,0 +1,38 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <context:component-scan base-package="denglj.demo.aop.anno,denglj.demo.aop.introduction" />
+    <aop:aspectj-autoproxy proxy-target-class="false"></aop:aspectj-autoproxy>
+
+    <!--这个全局配置不起作用了-->
+<!--    <aop:config proxy-target-class="true" />-->
+
+    <bean id="car" class="denglj.demo.aop.Car"></bean>
+    <bean id="myAdvice" class="denglj.demo.aop.advice.MyMethodInterceptor"></bean>
+    <bean id="myAfter" class="denglj.demo.aop.advice.MyAfterReturningAdvice"></bean>
+    <bean id="myBefore" class="denglj.demo.aop.advice.MyMethodBeforeAdvice"></bean>
+    <bean id="myThrows" class="denglj.demo.aop.advice.MyThrowsAdvice"></bean>
+
+    <bean id="proxyCar" class="org.springframework.aop.framework.ProxyFactoryBean">
+        <!--采用true表示cglib，false是jdk代理-->
+        <property name="proxyTargetClass" value="true"></property>
+        <property name="proxyInterfaces" value="denglj.demo.aop.ICar"></property>
+        <property name="target" ref="car"></property>
+        <property name="interceptorNames">
+            <list>
+                <value>myAdvice</value>
+                <value>myAfter</value>
+                <value>myBefore</value>
+                <value>myThrows</value>
+            </list>
+        </property>
+    </bean>
+</beans>

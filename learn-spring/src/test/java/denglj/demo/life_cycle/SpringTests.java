@@ -1,6 +1,5 @@
-package denglj.demo.init;
+package denglj.demo.life_cycle;
 
-import denglj.demo.property_holder_config.PropertyHolderBean;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +14,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  **/
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration({"application.xml"})
-public class SpringInitTests {
+public class SpringTests {
 
     @Autowired
     MyBean bean;
